@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
+        />
+        <title>Frontend Mentor | Product preview card component</title>
+    </head>
+    <body class="bg-light-gray">
+        <div class="bg-white flex flex-column">
+            <!-- header -->
+            <!--//what is accessable here - user user_id...-->
+
+            <div
+                class="pa3 pl4 pr4 flex justify-between"
+                style="
+                    box-shadow: inset 1px 0px 0px #f4f4f4,
+                        inset 0 -1px 0px #efefef;
+                "
+            >
+                <!-- linden get logo from function -->
+                <!-- logo -->
+                <div>
+                    <a href="#">
+                        <img
+                            src="https://fs.codelinden.com/wp-content/plugins/fansocial/dev/dummy/fansocial-logo.png"
+                            alt="Fansocial logo"
+                        />
+                    </a>
+                </div>
+
+                <div class="flex items-center" style="gap: 1.5rem">
+                    <div class="relative inline-block mr2">
+                        <a href="#">
+                            <svg
+                                class="w2 h2"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="48px"
+                                viewBox="0 0 24 24"
+                                width="48px"
+                                fill="#000000"
+                            >
+                                <path
+                                    fill="#6c757d"
+                                    d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"
+                                ></path>
+                            </svg>
+                            <span
+                                class="absolute top--1 right--2 bg-red white br-100 pa1 f7 w1 h1 flex items-center justify-center"
+                                >6</span
+                            >
+                        </a>
+                    </div>
+
+                    <div class="relative pointer">
+                        <div
+                            data-target="menu-1"
+                            style="
+                                background-image: url(https://d3d9qpagvotra1.cloudfront.net/1/images/2023_08_08_154725/2023_08_08_154725-300-min.jpg);
+                            "
+                            alt="user"
+                            class="w3 h3 bg-center cover db pointer br-100"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
