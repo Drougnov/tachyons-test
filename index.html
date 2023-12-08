@@ -4,6 +4,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
             rel="stylesheet"
+            href="https://fs.codelinden.com/wp-content/plugins/fansocial/assets/css/index.css?ver=1.0.css"
+        />
+        <link
+            rel="stylesheet"
             href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
         />
         <title>Frontend Mentor | Product preview card component</title>
@@ -13,17 +17,11 @@
             <!-- header -->
             <!--//what is accessable here - user user_id...-->
 
-            <div
-                class="pa3 pl4 pr4 flex justify-between"
-                style="
-                    box-shadow: inset 1px 0px 0px #f4f4f4,
-                        inset 0 -1px 0px #efefef;
-                "
-            >
+            <div class="ZJtVQ flex justify-between">
                 <!-- linden get logo from function -->
                 <!-- logo -->
-                <div>
-                    <a href="#">
+                <div class="hgftjj">
+                    <a href="https://fs.codelinden.com">
                         <img
                             src="https://fs.codelinden.com/wp-content/plugins/fansocial/dev/dummy/fansocial-logo.png"
                             alt="Fansocial logo"
@@ -31,9 +29,9 @@
                     </a>
                 </div>
 
-                <div class="flex items-center" style="gap: 1.5rem">
-                    <div class="relative inline-block mr2">
-                        <a href="#">
+                <div class="header-right">
+                    <div class="notification-icon relative inline-block mr2">
+                        <a href="/dashboard/notifications/">
                             <svg
                                 class="w2 h2"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -48,21 +46,238 @@
                                 ></path>
                             </svg>
                             <span
-                                class="absolute top--1 right--2 bg-red white br-100 pa1 f7 w1 h1 flex items-center justify-center"
+                                class="sans-serif fw4 absolute top--1 right--2 bg-red white br-100 pa1 f7 w1 h1 flex items-center justify-center"
                                 >6</span
                             >
                         </a>
                     </div>
 
-                    <div class="relative pointer">
+                    <div class="target-id">
                         <div
                             data-target="menu-1"
                             style="
                                 background-image: url(https://d3d9qpagvotra1.cloudfront.net/1/images/2023_08_08_154725/2023_08_08_154725-300-min.jpg);
                             "
                             alt="user"
-                            class="w3 h3 bg-center cover db pointer br-100"
+                            class="ZgQHk pointer db br-100 target-id-button avatar-dropdown-target"
                         ></div>
+                        <div
+                            data-menu="menu-1"
+                            class="menu-id avatar-dropdown-menu right"
+                        >
+                            <!-- Profile -->
+                            <div class="menu-item menu-item-active">
+                                <div class="menu-item-icon">
+                                    <svg
+                                        class="w2 h2 icon-profile"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M12.12 12.78C12.05 12.77 11.96 12.77 11.88 12.78C10.12 12.72 8.71997 11.28 8.71997 9.50998C8.71997 7.69998 10.18 6.22998 12 6.22998C13.81 6.22998 15.28 7.69998 15.28 9.50998C15.27 11.28 13.88 12.72 12.12 12.78Z"
+                                            stroke="#292D32"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="db"
+                                        ></path>
+                                        <path
+                                            d="M18.74 19.3801C16.96 21.0101 14.6 22.0001 12 22.0001C9.40001 22.0001 7.04001 21.0101 5.26001 19.3801C5.36001 18.4401 5.96001 17.5201 7.03001 16.8001C9.77001 14.9801 14.25 14.9801 16.97 16.8001C18.04 17.5201 18.64 18.4401 18.74 19.3801Z"
+                                            stroke="#292D32"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="db"
+                                        ></path>
+                                        <path
+                                            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                            stroke="#292D32"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="db"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <span>
+                                    <a href="/dashboard/profile/">Profile</a>
+                                </span>
+                            </div>
+
+                            <!-- Account -->
+                            <div class="menu-item menu-item-active">
+                                <div class="menu-item-icon">
+                                    <svg
+                                        class="w2 h2 icon-profile"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M12.12 12.78C12.05 12.77 11.96 12.77 11.88 12.78C10.12 12.72 8.71997 11.28 8.71997 9.50998C8.71997 7.69998 10.18 6.22998 12 6.22998C13.81 6.22998 15.28 7.69998 15.28 9.50998C15.27 11.28 13.88 12.72 12.12 12.78Z"
+                                            stroke="#292D32"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="db"
+                                        ></path>
+                                        <path
+                                            d="M18.74 19.3801C16.96 21.0101 14.6 22.0001 12 22.0001C9.40001 22.0001 7.04001 21.0101 5.26001 19.3801C5.36001 18.4401 5.96001 17.5201 7.03001 16.8001C9.77001 14.9801 14.25 14.9801 16.97 16.8001C18.04 17.5201 18.64 18.4401 18.74 19.3801Z"
+                                            stroke="#292D32"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="db"
+                                        ></path>
+                                        <path
+                                            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                            stroke="#292D32"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="db"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <span>
+                                    <a href="/dashboard/account/">Account</a>
+                                </span>
+                            </div>
+
+                            <!-- View your profile -->
+                            <div class="menu-item menu-item-active">
+                                <div class="menu-item-icon">
+                                    <svg
+                                        class="w2 h2 icon-profile"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M12.12 12.78C12.05 12.77 11.96 12.77 11.88 12.78C10.12 12.72 8.71997 11.28 8.71997 9.50998C8.71997 7.69998 10.18 6.22998 12 6.22998C13.81 6.22998 15.28 7.69998 15.28 9.50998C15.27 11.28 13.88 12.72 12.12 12.78Z"
+                                            stroke="#292D32"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="db"
+                                        ></path>
+                                        <path
+                                            d="M18.74 19.3801C16.96 21.0101 14.6 22.0001 12 22.0001C9.40001 22.0001 7.04001 21.0101 5.26001 19.3801C5.36001 18.4401 5.96001 17.5201 7.03001 16.8001C9.77001 14.9801 14.25 14.9801 16.97 16.8001C18.04 17.5201 18.64 18.4401 18.74 19.3801Z"
+                                            stroke="#292D32"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="db"
+                                        ></path>
+                                        <path
+                                            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                            stroke="#292D32"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="db"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <span>
+                                    <a href="/dashboard/account/"
+                                        >View your profile</a
+                                    >
+                                </span>
+                            </div>
+
+                            <!-- Start streaming -->
+                            <div class="menu-item menu-item-active">
+                                <div class="menu-item-icon">
+                                    <svg
+                                        class="w2 h2 icon-profile"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M12.12 12.78C12.05 12.77 11.96 12.77 11.88 12.78C10.12 12.72 8.71997 11.28 8.71997 9.50998C8.71997 7.69998 10.18 6.22998 12 6.22998C13.81 6.22998 15.28 7.69998 15.28 9.50998C15.27 11.28 13.88 12.72 12.12 12.78Z"
+                                            stroke="#292D32"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="db"
+                                        ></path>
+                                        <path
+                                            d="M18.74 19.3801C16.96 21.0101 14.6 22.0001 12 22.0001C9.40001 22.0001 7.04001 21.0101 5.26001 19.3801C5.36001 18.4401 5.96001 17.5201 7.03001 16.8001C9.77001 14.9801 14.25 14.9801 16.97 16.8001C18.04 17.5201 18.64 18.4401 18.74 19.3801Z"
+                                            stroke="#292D32"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="db"
+                                        ></path>
+                                        <path
+                                            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                            stroke="#292D32"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="db"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <span>
+                                    <a href="/dashboard/stream-settings/"
+                                        >Start streaming</a
+                                    >
+                                </span>
+                            </div>
+
+                            <!-- Logout -->
+                            <div class="menu-item menu-item-active">
+                                <div class="menu-item-icon">
+                                    <svg
+                                        class="w2 h2 icon-profile"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M12.12 12.78C12.05 12.77 11.96 12.77 11.88 12.78C10.12 12.72 8.71997 11.28 8.71997 9.50998C8.71997 7.69998 10.18 6.22998 12 6.22998C13.81 6.22998 15.28 7.69998 15.28 9.50998C15.27 11.28 13.88 12.72 12.12 12.78Z"
+                                            stroke="#292D32"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="db"
+                                        ></path>
+                                        <path
+                                            d="M18.74 19.3801C16.96 21.0101 14.6 22.0001 12 22.0001C9.40001 22.0001 7.04001 21.0101 5.26001 19.3801C5.36001 18.4401 5.96001 17.5201 7.03001 16.8001C9.77001 14.9801 14.25 14.9801 16.97 16.8001C18.04 17.5201 18.64 18.4401 18.74 19.3801Z"
+                                            stroke="#292D32"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="db"
+                                        ></path>
+                                        <path
+                                            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                            stroke="#292D32"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="db"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <span>
+                                    <a
+                                        href="https://fs.codelinden.com/wp-login.php?action=logout&amp;_wpnonce=3f7e4ca2a9"
+                                        >Logout</a
+                                    >
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="IhwpR items-center justify-center relative pointer"
+                    >
+                        <div class="yZcCW db absolute"></div>
                     </div>
                 </div>
             </div>
